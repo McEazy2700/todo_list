@@ -1,0 +1,150 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Railway', sans-serif;
+}
+
+a,
+p {
+    color: #4b5156
+}
+
+.container {
+    max-width: 80%;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 2);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 2);
+    margin: auto;
+    border-radius: 5px;
+    padding: 0px
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, #e690ee 0%, #c214d2 43%, #5311cd 100%)
+}
+
+.header-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.task-title {
+    display: flex;
+}
+
+.task-title a {
+    text-decoration: none;
+    color: #4b5156;
+    margin-left: 10px;
+}
+
+.task-complete-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 20px;
+    background-color: rgb(105, 192, 105);
+    border-radius: 50%;
+}
+
+.task-incomplete-icon {
+    display: flex;
+    align-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 50%;
+}
+
+.delete-link {
+    text-decoration: none;
+    font-weight: 900;
+    color: #cf4949;
+    font-size: 22px;
+    line-height: 0;
+}
+
+.checkmark {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#add-link {
+    color: #c214d2;
+    text-decoration: none;
+    font-size: 42px;
+    text-shadow: 1px 1px #5311cd;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #e690ee;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+.button {
+    border: 1px solid #e690ee;
+    background-color: #FAFAFA;
+    color: #e690ee;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.button:hover,
+.button:active {
+    background-color: #c214d2;
+    color: #FAFAFA;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    font-weight: bold;
+}
