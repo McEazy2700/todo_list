@@ -9,7 +9,20 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        {% if request.user.is_authenticated %}
+        {{request.user}}
+        <a href="{% url 'logout' %}">Log Out</a>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+        <hr>
+
         <h1>My To Do List</h1>
+
+        <form method="GET">
+            <input type="text" name="search-data" value={{search_input}}>
+            <input type="submit" value="Search">
+        </form>
 
         <table>
             <tr>
@@ -18,7 +31,6 @@
             {% for item in tasks %}
                 <tr>
                     <td>{{item.title}}</td>
-                    <td><a href="{% url 'task_detail' item.id %}">View</a></td>
                     <td><a href="{% url 'update-item' item.id %}">Edit</a></td>
                     <td><a href="{% url 'delete-item' item.id %}">Delete</a></td>
                 </tr>
